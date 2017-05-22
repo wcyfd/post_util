@@ -25,6 +25,7 @@ public class PropCommand implements Command {
 	@Override
 	public void execute(Map<String, String> pairs) {
 		pairs.putAll(map);
+		System.out.println(map);
 	}
 
 }

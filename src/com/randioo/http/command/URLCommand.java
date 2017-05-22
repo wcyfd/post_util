@@ -25,7 +25,7 @@ public class URLCommand implements Command {
 	@Override
 	public void execute(Map<String, String> pairs) {
 		// TODO Auto-generated method stub
-
+		System.out.println(url);
 	}
 
 }

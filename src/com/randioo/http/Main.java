@@ -58,7 +58,7 @@ public class Main {
 		for (Command cmd : executeCommand) {
 			cmd.execute(pairs);
 		}
-		System.out.println(pairs);
+//		System.out.println(pairs);
 
 		try {
 			doPost(urlCommand.getUrl(), pairs);
@@ -101,6 +101,7 @@ public class Main {
 			InputStream err = ((HttpURLConnection) conn).getErrorStream();
 			if (err == null)
 				throw e;
+			@SuppressWarnings("resource")
 			Scanner in = new Scanner(err);
 			response.append(in.nextLine());
 			response.append("\n");
